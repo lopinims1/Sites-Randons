@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+body {
+    color: #e3e3ee;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header h1 {
+    position: absolute;
+    font-size: 2.1rem;
+    color: #e3e3ee;
+    left: 62px; 
+    font-family: 'Buda', sans-serif;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 36px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    margin-left: 576px;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #e3e3ee;
+}
+
+header .opt-ico img {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    right: 26px;
+   
+}
+
+main {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+main p.p-init {
+    position: absolute;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    top: 295px;
+    left: 120px;
+    
+}
+
+main h5 {
+    position: absolute;
+    font-size: 1rem;
+    top: 356px;
+    left: 120px;
+}
+
+main h5 a {
+    text-decoration: none;
+    color: #4877bde3;
+}
+
+main ul {
+    position: absolute;
+    top: 730px;
+    left: 50px;
+    display: flex; 
+    gap: 12px;
+    z-index: 2;
+}
+
+
+main ul li img {
+    width: 50%;
+    height: 50%;
+    filter: blur(1px);
+    transition: filter 0.5s ease-in-out;
+    
+}   
+
+main ul li:hover img {
+    filter: blur(0);
+    
+}
+
+main .main-circle {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background-color: #af925de1;
+    top: -295px;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    box-shadow: inset 0 0 150px #b63f3fda; 
+    filter: drop-shadow(0 0 100px #645e5ebd) blur(1.5px);
+    animation: m-circle 12s ease-in-out infinite;
+}
+
+@keyframes m-circle {
+    0% {
+        transform: scale(1);
+    }
+    
+    50% {
+        transform: scale(1.030);
+    }
+    
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+main h1 {
+    position: absolute;
+    font-size: 4.5rem;
+    font-weight: 900;
+    top: 400px;
+    left: 80%;
+    letter-spacing: 6px;
+    line-height: 50px;
+    color: #e3e3eee3;
+    transform: translateX(-50%);
+    font-family: 'Buda', sans-serif;
+    z-index: 3;
+}
+
+main .woman img {
+    position: absolute;
+    width: 72%;
+    height: 100%;
+    top: 90px;
+    left: 47%;
+    transform: translateX(-50%);
+    filter: drop-shadow(0 0 20px #6326263a) blur(0.4px);
+    
+}
+
+main .author {
+    position: absolute;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    top: 94%;
+    left: 89%;
+}
